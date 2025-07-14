@@ -4,6 +4,9 @@ using ToDo.Domain.Todos;
 
 namespace ToDo.API
 {
+    /// <summary>
+    /// Automapper class for mapping.
+    /// </summary>
     public class MapperProfile: Profile
     {
         public MapperProfile()

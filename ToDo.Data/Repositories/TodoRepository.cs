@@ -4,6 +4,9 @@ using ToDo.Domain.Todos;
 
 namespace ToDo.Data.Repositories
 {
+    /// <summary>
+    /// Todo repository.
+    /// </summary>
     public class TodoRepository : ITodoRepository
     {
         private readonly ApplicationDbContext _context;

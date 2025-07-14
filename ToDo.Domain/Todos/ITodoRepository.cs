@@ -1,5 +1,8 @@
 ﻿namespace ToDo.Domain.Todos
 {
+    /// <summary>
+    /// ITodoRepository.
+    /// </summary>
     public interface ITodoRepository
     {
         Task<Todo> AddTodoAsync(Todo model);

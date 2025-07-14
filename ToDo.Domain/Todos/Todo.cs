@@ -2,6 +2,9 @@
 
 namespace ToDo.Domain.Todos
 {
+    /// <summary>
+    /// Todo entity.
+    /// </summary>
     public class Todo: BaseEntity
     {
         public string Title { get; set; }

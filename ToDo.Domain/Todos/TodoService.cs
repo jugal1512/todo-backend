@@ -2,6 +2,9 @@
 
 namespace ToDo.Domain.Todos
 {
+    /// <summary>
+    /// Todo Service.
+    /// </summary>
     public class TodoService : ITodoService
     {
         private readonly ITodoRepository _todoRepository;

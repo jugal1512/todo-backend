@@ -1,5 +1,8 @@
 ﻿namespace ToDo.API.Models.Todos
 {
+    /// <summary>
+    /// Todo view model.
+    /// </summary>
     public class TodoViewModel
     {
         public Guid Id { get; set; }

@@ -4,6 +4,9 @@ using ToDo.Domain.Todos;
 
 namespace ToDo.Data.EntityConfigurations
 {
+    /// <summary>
+    /// Todo entity configuration method.
+    /// </summary>
     public class TodoConfiguration : IEntityTypeConfiguration<Todo>
     {
         public void Configure(EntityTypeBuilder<Todo> builder)

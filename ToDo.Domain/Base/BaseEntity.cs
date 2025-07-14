@@ -1,5 +1,8 @@
 ﻿namespace ToDo.Domain.Base
 {
+    /// <summary>
+    /// Base Entity.
+    /// </summary>
     public class BaseEntity
     {
         public Guid Id { get; set; }

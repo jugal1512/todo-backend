@@ -3,6 +3,9 @@ using ToDo.Domain.Todos;
 
 namespace ToDo.API.Extensions
 {
+    /// <summary>
+    /// Service Extension for inject the application service.
+    /// </summary>
     public static class ApplicationServiceExtension
     {
         public static IServiceCollection AddApplicationService(this IServiceCollection services)

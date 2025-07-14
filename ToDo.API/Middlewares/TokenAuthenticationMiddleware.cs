@@ -1,5 +1,8 @@
 ﻿namespace ToDo.API.Middlewares
 {
+    /// <summary>
+    /// Middleware for Token Authenticstion.
+    /// </summary>
     public class TokenAuthenticationMiddleware
     {
         private readonly RequestDelegate _next;

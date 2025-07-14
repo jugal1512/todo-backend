@@ -1,5 +1,8 @@
 ﻿namespace ToDo.API.Models.Todos
 {
+    /// <summary>
+    /// Add todo request model.
+    /// </summary>
     public class AddTodoRequestModel
     {
         public string Title { get; set; }

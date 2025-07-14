@@ -6,6 +6,9 @@ using ToDo.Domain.Todos;
 
 namespace ToDo.Data.Data
 {
+    /// <summary>
+    /// Application Db context.
+    /// </summary>
     public class ApplicationDbContext: DbContext
     {
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options): base(options)
@@ -15,6 +18,11 @@ namespace ToDo.Data.Data
 
         public DbSet<Todo> Todos { get; set; }
 
+        /// <summary>
+        /// Override method for SaveChangesAsync
+        /// </summary>
+        /// <param name="cancellationToken"></param>
+        /// <returns></returns>
         public override Task<int> SaveChangesAsync(CancellationToken cancellationToken = new CancellationToken())
         {
             foreach (var entry in ChangeTracker.Entries<BaseEntity>())
@@ -37,6 +45,10 @@ namespace ToDo.Data.Data
             return base.SaveChangesAsync(cancellationToken);
         }
 
+        /// <summary>
+        /// OnModelCreating.
+        /// </summary>
+        /// <param name="modelBuilder"></param>
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
